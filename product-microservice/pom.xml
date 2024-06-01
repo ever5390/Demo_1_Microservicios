@@ -56,6 +56,14 @@
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 			<version>3.0.5</version>
 		</dependency>
+		<!-- Refresh Configuration: Para exponer un endpoint que nos permita interactuar
+			con los cambios realizado sen el repo q tiene las configuraciones, para que
+			actualice las configuraciones en el MS tambipen además de en el CONFIG-SERVER
+			y no tengamos que levantar el MS para actualizarse. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 
 	</dependencies>
 
