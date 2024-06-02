@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Getter
 @Setter
 @RequestMapping("/api/categories")
-@RefreshScope
+//@RefreshScope
 public class CategoryController {
     @Value("${app.testProperty}")
     private String testProperty;
