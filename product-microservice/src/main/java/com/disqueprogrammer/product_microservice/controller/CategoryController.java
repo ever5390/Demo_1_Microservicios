@@ -18,7 +18,7 @@ public class CategoryController {
     private String testProperty;
 
 
-    @GetMapping("/test_property")
+    @GetMapping("/test-property")
     private String getTestProperty() {
         return this.testProperty;
     }
