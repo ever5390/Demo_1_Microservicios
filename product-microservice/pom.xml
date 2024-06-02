@@ -42,15 +42,12 @@
 			<version>4.1.1</version>
 		</dependency>
 		<!-- Config Client -> Config server -->
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
-			<version>3.0.0</version>
+			<artifactId>spring-cloud-config-client</artifactId>
+			<version>4.1.2</version>
 		</dependency>
-		<!-- Config Client - Bootstrap :::
-			Le da la capacidad de comunicación remota con un sever para
-			obtener sus configuraciones.
-		-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bootstrap</artifactId>
