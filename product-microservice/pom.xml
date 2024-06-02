@@ -41,7 +41,6 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>4.1.1</version>
 		</dependency>
-		<!-- Config Client -> Config server -->
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
