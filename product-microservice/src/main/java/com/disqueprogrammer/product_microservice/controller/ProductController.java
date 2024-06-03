@@ -5,6 +5,8 @@ import com.disqueprogrammer.product_microservice.entity.ProductEntity;
 import com.disqueprogrammer.product_microservice.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +14,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
+@RefreshScope
 public class ProductController {
+
+    @Value("${app.key}")
+    private String testkey;
 
     private final ProductRepository productRepository;
 
@@ -33,4 +39,8 @@ public class ProductController {
         productRepository.save(productReq);
     }
 
+    @GetMapping("/key")
+    private String getTestProperty() {
+        return this.testkey;
+    }
 }
