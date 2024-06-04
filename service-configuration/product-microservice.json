@@ -1,0 +1,3 @@
+{
+  "spring.data.mongodb.uri":"mongodb://root:rootpassword@localhost:27017/productDB?authSource=admin&connectTimeoutMS=30000&socketTimeoutMS=30000",
+}
